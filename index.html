@@ -3,31 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Formulario de Registro</title>
+  <title>Registro</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h2>Registro</h2>
+    <div class="logo">
+      <div class="logo-icon">🔐</div>
+      <h2>Crear cuenta</h2>
+      <p class="subtitle">Ingresa tus datos para registrarte</p>
+    </div>
+
     <form id="registroForm">
       <div class="campo">
         <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+        <div class="input-wrapper">
+          <span class="input-icon">👤</span>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+        </div>
       </div>
+
       <div class="campo">
         <label for="edad">Edad</label>
-        <input type="number" id="edad" name="edad" placeholder="Tu edad" min="1" max="120" required />
+        <div class="input-wrapper">
+          <span class="input-icon">🎂</span>
+          <input type="number" id="edad" name="edad" placeholder="Tu edad" min="1" max="120" required />
+        </div>
       </div>
+
       <div class="campo">
         <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required />
+        <div class="input-wrapper">
+          <span class="input-icon">📱</span>
+          <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required />
+        </div>
       </div>
+
       <div class="campo">
         <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required />
+        <div class="input-wrapper">
+          <span class="input-icon">✉️</span>
+          <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required />
+        </div>
       </div>
+
       <button type="submit">Registrarse</button>
     </form>
+
+    <p class="footer-text">¿Ya tienes cuenta? <a href="#" style="color:#e94560;text-decoration:none;">Inicia sesión</a></p>
   </div>
   <script src="app.js"></script>
 </body>
